@@ -1,5 +1,27 @@
 .App {
   text-align: center;
+  color: blue;
+}
+
+h1 {
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+.Magic {
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+button {
+  margin: 10px;
+}
+
+input {
+  width: 200px;
+  border: black solid 1px;
 }
 
 .App-logo {

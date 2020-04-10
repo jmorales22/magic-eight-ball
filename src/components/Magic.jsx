@@ -32,7 +32,7 @@ class Magic extends Component {
     const { value, questions } = this.state;
 
     return (
-        <div>
+        <div className="Magic">
         <form onSubmit={this.handleSubmit}>
         <input type='text' data-testid="messageText" placeholder="Enter a Question" onChange={this.handleChange} value={value}/>
         <button type='submit' data-testid="submitButton">Submit</button> 
