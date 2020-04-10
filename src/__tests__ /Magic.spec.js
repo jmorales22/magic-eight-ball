@@ -7,7 +7,7 @@ describe('<Magic />', () => {
   
     afterEach(cleanup);
   
-    describe('clicking the send button', () => {
+    describe('clicking the submit button', () => {
       let sendHandler;
 
       beforeEach(() => {
@@ -17,19 +17,17 @@ describe('<Magic />', () => {
           getByTestId('messageText'),
           {
             target: {
-              value: 'New message',
+              value: '',
             },
           },
         );
   
-        fireEvent.click(getByTestId('sendButton'));
+        fireEvent.click(getByTestId('submitButton'));
       });
   
       it('clears the text field', () => {
         expect(getByTestId('messageText').value).toEqual('');
       });
-      it('calls the send handler', () => {
-        expect(sendHandler).toHaveBeenCalledWith('New message');
-      });
     });
-  });
+});
+
